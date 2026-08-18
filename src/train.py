@@ -3,7 +3,7 @@ train.py
 Baseline training script for the Iris classifier.
 Used to demonstrate a version-controlled ML project structure.
 """
-import joblib
+import joblib  
 from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -27,6 +27,7 @@ def train_model(X_train, y_train, n_estimators=100, max_depth=None):
 
 def evaluate_model(model, X_test, y_test):
     predictions = model.predict(X_test)
+    print(classification_report(y_test, predictions))
     acc = accuracy_score(y_test, predictions)
     report = classification_report(y_test, predictions)
     return acc, report
