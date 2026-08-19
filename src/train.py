@@ -27,7 +27,11 @@ def train_model(X_train, y_train, n_estimators=100, max_depth=None):
 
 def evaluate_model(model, X_test, y_test):
     predictions = model.predict(X_test)
+<<<<<<< Updated upstream
     print(classification_report(y_test, predictions))
+=======
+
+>>>>>>> Stashed changes
     acc = accuracy_score(y_test, predictions)
     report = classification_report(y_test, predictions)
     return acc, report
