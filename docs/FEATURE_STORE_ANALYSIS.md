@@ -1,4 +1,5 @@
 Verification & Execution Steps
+
 •	feast apply completes with no errors and reports 1 entity + 2 feature views created; data/registry.db file exists afterward.
 •	feast materialize-incremental ... completes with a 100% progress bar for both feature views and no errors; data/online_store.db grows in file size.
 •	Running get_online_features.py returns a dictionary with all requested feature keys populated (no None values) for sample_id 0, 1, and 2, confirming successful online retrieval.
