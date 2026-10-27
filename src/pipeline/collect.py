@@ -4,9 +4,10 @@ Stage 1: Data Collection.
 Simulates ingesting raw data from an external source and writing
 it to the raw data zone, with basic collection-time metadata logging.
 """
-import argparse  # takes input from the command line. It allows your Python program to accept arguments/options from the terminal.
+# Accepts command-line arguments and options.
+import argparse
 
-# displays useful messages. It is used to show what the program is doing. Better for MLOps because you can classify messages.
+# Displays useful messages and supports classified logging.
 import logging
 from datetime import datetime, timezone
 
