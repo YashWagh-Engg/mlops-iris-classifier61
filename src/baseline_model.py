@@ -49,5 +49,3 @@ def run_baseline(data_path: str):
 
 if __name__ == "__main__":
     run_baseline("data/processed/iris_features.csv")
-
-

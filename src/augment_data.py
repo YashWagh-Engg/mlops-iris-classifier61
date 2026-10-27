@@ -1,5 +1,5 @@
-import pandas as pd 
-import numpy as np 
+import pandas as pd
+import numpy as np
 
 df = pd.read_csv("data/raw/iris_v1.csv")
 rng = np.random.default_rng(42)
